@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">@color/colorDark1</color>
+    <color name="colorPrimaryVariant">@color/colorDark2</color>
+    <color name="colorOnPrimary">@color/coclorLIght1</color>
+    <color name="colorOnPrimaryVariant">@color/black</color>
+
+    <color name="colorPrimary_400">#47bb3d</color>
+    <color name="colorPrimary_500">#09af00</color>
+    <color name="colorPrimary_600">#00a000</color>
+    <color name="colorPrimary_700">#008e00</color>
+    <color name="colorPrimary_800">#007d00</color>
+
+<!--    custom-->
+    <color name="colorDark1">#1b2326</color>
+    <color name="colorDark2">#3a4f52</color>
+    <color name="coclorLIght1">#10f5cc</color>
+    <color name="coclorLIght2">#f5fefd</color>
+
+<!--    color me-->
+    <color name="hcolorIndigo">#8998ff</color>
+    <color name="hcolorBackground">#f6f7fa</color>
+    <color name="hred_600">#fd3746</color>
+    <color name="hblue_a700">#345ffb</color>
+    <color name="hamber_400">#f0c419</color>
+    <color name="hlightGreen_a700">#18cf18</color>
+    <color name="hpurple_a400">#b900db</color>
+    <color name="hred_a400">#cf0b25</color>
+    <color name="hbluGrey_50">#f6f7fa</color>
+    <color name="hbrown_100">#babfb6</color>
+
+</resources>

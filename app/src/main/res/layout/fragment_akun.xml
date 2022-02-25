@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.akun.AkunFragment"
+    android:background="@color/hcolorBackground">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/materialCardView2"
+            android:layout_width="@dimen/_90sdp"
+            android:layout_height="@dimen/_90sdp"
+            app:cardCornerRadius="@dimen/_45sdp"
+            app:strokeColor="@color/white"
+            app:strokeWidth="@dimen/_2sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/inisialName"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/hcolorBackground"
+                    android:elevation="@dimen/_5sdp"
+                    android:fontFamily="@font/robotomedium"
+                    android:gravity="center"
+                    android:text="YU"
+                    android:textColor="@color/hred_a400"
+                    android:textSize="@dimen/_20ssp" />
+
+                <ImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@+id/materialCardView2"
+            app:layout_constraintStart_toEndOf="@+id/materialCardView2"
+            app:layout_constraintTop_toTopOf="@+id/materialCardView2"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/namaUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/robotobold"
+                android:text="Zaid"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_goneMarginStart="@dimen/_20sdp" />
+
+            <TextView
+                android:id="@+id/textKelas"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kelas"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintStart_toStartOf="@+id/namaUser"
+                app:layout_constraintTop_toBottomOf="@+id/namaUser" />
+
+            <TextView
+                android:id="@+id/kelasUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="6 Putra"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintBottom_toBottomOf="@+id/textKelas"
+                app:layout_constraintStart_toEndOf="@+id/textKelas"
+                app:layout_constraintTop_toTopOf="@+id/textKelas" />
+
+            <TextView
+                android:id="@+id/alamatUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Kesamben - Blitar"
+                android:fontFamily="@font/robotomedium"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15ssp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textKelas"
+                app:layout_constraintTop_toBottomOf="@+id/textKelas" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutUmum"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layout1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textUmum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/robotomedium"
+            android:text="UMUM"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewUmum"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textUmum"
+            app:cardBackgroundColor="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/menuUmum1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_8sdp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pilihMenu1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/iconMenu1"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_favorite_24"
+                            app:tint="@color/hred_600" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/textFavoriteClass"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Kelas Favorit"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu1"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu1"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu1" />
+
+                    <ImageView
+                        android:id="@+id/moreMenu1"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu1"
+                        app:tint="@color/hbrown_100" />
+
+                    <View
+                        android:id="@+id/lineMenu1"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:background="@color/hcolorBackground"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu1"
+                        app:layout_constraintTop_toBottomOf="@+id/iconMenu1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pilihMenu2"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/pilihMenu1">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/iconMenu2"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_person_24"
+                            app:tint="@color/hblue_a700" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/textMyFriends"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Teman Saya"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu2"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu2"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu2" />
+
+                    <ImageView
+                        android:id="@+id/moreMenu2"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu2"
+                        app:tint="@color/hbrown_100"/>
+
+                    <View
+                        android:id="@+id/lineMenu2"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:background="@color/hcolorBackground"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu2"
+                        app:layout_constraintTop_toBottomOf="@+id/iconMenu2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pilihMenu3"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/pilihMenu2">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/iconMenu3"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_achievements_24"
+                            app:tint="@color/hamber_400" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/textAchievements"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Penghargaan"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu3"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu3"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu3" />
+
+                    <ImageView
+                        android:id="@+id/moreMenu3"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu3"
+                        app:tint="@color/hbrown_100"/>
+
+                    <View
+                        android:id="@+id/lineMenu3"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:background="@color/hcolorBackground"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu3"
+                        app:layout_constraintTop_toBottomOf="@+id/iconMenu3"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPengaturan"
+        android:layout_width="0dp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/layoutUmum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <TextView
+            android:id="@+id/textPengaturan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:fontFamily="@font/robotomedium"
+            android:text="PENGATURAN"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardViewPengaturan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textPengaturan"
+            app:cardBackgroundColor="@color/white">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:padding="@dimen/_10sdp"
+                android:id="@+id/menuPengaturan1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_gravity="fill"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_8sdp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pilihMenu4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/iconMenu4"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_key_24"
+                            app:tint="@color/hlightGreen_a700" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/textEditLoginDetails"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Ubah Detail Login"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu4"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu4"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu4" />
+
+                    <ImageView
+                        android:id="@+id/moreMenu4"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu4"
+                        app:tint="@color/hbrown_100" />
+
+                    <View
+                        android:id="@+id/lineMenu4"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:background="@color/hcolorBackground"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu4"
+                        app:layout_constraintTop_toBottomOf="@+id/iconMenu4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pilihMenu5"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/pilihMenu4">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/iconMenu5"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_check_24"
+                            app:tint="@color/hpurple_a400" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/textUpdateInterets"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Ubah Data"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu5"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu5"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu5" />
+
+                    <ImageView
+                        android:id="@+id/moreMenu5"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu5"
+                        app:tint="@color/hbrown_100"/>
+
+                    <View
+                        android:id="@+id/lineMenu5"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:background="@color/hcolorBackground"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu5"
+                        app:layout_constraintTop_toBottomOf="@+id/iconMenu5"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/pilihMenu6"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@+id/pilihMenu5">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/iconMenu6"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_rowWeight="1"
+                        android:layout_columnWeight="1"
+                        android:layout_gravity="fill"
+                        app:cardCornerRadius="@dimen/_8sdp"
+                        app:cardElevation="@dimen/_2sdp">
+
+                        <ImageView
+                            android:layout_width="@dimen/_20sdp"
+                            android:layout_height="@dimen/_20sdp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_baseline_block_24"
+                            app:tint="@color/hred_a400" />
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <TextView
+                        android:id="@+id/textBlockedUsers"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_13sdp"
+                        android:fontFamily="@font/robotoregular"
+                        android:text="Pengguna Diblokir"
+                        android:textSize="@dimen/_15ssp"
+                        android:textColor="@color/black"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu6"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu6"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu6" />
+
+                    <ImageView
+                        android:id="@+id/moreMenu6"
+                        android:layout_width="@dimen/_10sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconMenu6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/iconMenu6"
+                        app:tint="@color/hbrown_100"/>
+
+                    <View
+                        android:id="@+id/lineMenu6"
+                        android:layout_width="0dp"
+                        android:layout_height="0.8dp"
+                        android:background="@color/hcolorBackground"
+                        app:layout_constraintStart_toEndOf="@+id/iconMenu6"
+                        app:layout_constraintTop_toBottomOf="@+id/iconMenu6"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginTop="@dimen/_5sdp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
