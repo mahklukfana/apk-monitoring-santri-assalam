@@ -54,7 +54,7 @@ class AkunFragment : Fragment() {
                 namaUser.text = user.name
 //                emailUser.text = user.email
 //                phoneUser.text = user.phone
-                inisialName.text = user.name.getInitial()
+//                inisialName.text = user.name.getInitial()
             }
         }
     }

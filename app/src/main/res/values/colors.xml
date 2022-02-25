@@ -36,5 +36,9 @@
     <color name="hred_a400">#cf0b25</color>
     <color name="hbluGrey_50">#f6f7fa</color>
     <color name="hbrown_100">#babfb6</color>
+    <color name="hblueGrey_700">#38475b</color>
+    <color name="hblueGrey_400">#778390</color>
+    <color name="hblack">#000000</color>
+    <color name="hwhite">#ffffff</color>
 
 </resources>

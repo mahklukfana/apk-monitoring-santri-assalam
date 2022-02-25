@@ -20,11 +20,11 @@
 
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/materialCardView2"
-            android:layout_width="@dimen/_90sdp"
-            android:layout_height="@dimen/_90sdp"
-            app:cardCornerRadius="@dimen/_45sdp"
+            android:layout_width="@dimen/_95sdp"
+            android:layout_height="@dimen/_95sdp"
+            app:cardCornerRadius="@dimen/_50sdp"
             app:strokeColor="@color/white"
-            app:strokeWidth="@dimen/_2sdp"
+            app:strokeWidth="@dimen/_1sdp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
 
@@ -41,6 +41,7 @@
                     android:fontFamily="@font/robotomedium"
                     android:gravity="center"
                     android:text="YU"
+                    android:visibility="gone"
                     android:textColor="@color/hred_a400"
                     android:textSize="@dimen/_20ssp" />
 
@@ -48,6 +49,8 @@
                     android:id="@+id/imgUser"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ulfa"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -57,8 +60,8 @@
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="0dp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_17sdp"
+            android:layout_height="@dimen/_95sdp"
             app:layout_constraintBottom_toBottomOf="@+id/materialCardView2"
             app:layout_constraintStart_toEndOf="@+id/materialCardView2"
             app:layout_constraintTop_toTopOf="@+id/materialCardView2"
@@ -66,12 +69,11 @@
 
             <TextView
                 android:id="@+id/namaUser"
+                style="@style/textProfile"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/robotobold"
                 android:text="Zaid"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15ssp"
+                android:layout_marginTop="@dimen/_10sdp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -82,9 +84,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Kelas"
-                android:fontFamily="@font/robotomedium"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15ssp"
+                style="@style/textSubProfile"
                 app:layout_constraintStart_toStartOf="@+id/namaUser"
                 app:layout_constraintTop_toBottomOf="@+id/namaUser" />
 
@@ -92,11 +92,9 @@
                 android:id="@+id/kelasUser"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginStart="@dimen/_2sdp"
                 android:text="6 Putra"
-                android:fontFamily="@font/robotomedium"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15ssp"
+                style="@style/textSubProfile"
                 app:layout_constraintBottom_toBottomOf="@+id/textKelas"
                 app:layout_constraintStart_toEndOf="@+id/textKelas"
                 app:layout_constraintTop_toTopOf="@+id/textKelas" />
@@ -106,9 +104,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:text="Kesamben - Blitar"
-                android:fontFamily="@font/robotomedium"
-                android:textColor="@color/colorPrimary"
-                android:textSize="@dimen/_15ssp"
+                style="@style/textSubProfile"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="@+id/textKelas"
                 app:layout_constraintTop_toBottomOf="@+id/textKelas" />
@@ -133,10 +129,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_20sdp"
-            android:fontFamily="@font/robotomedium"
+            style="@style/headerMenu"
             android:text="UMUM"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -169,6 +163,8 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
                     app:layout_constraintEnd_toEndOf="parent">
 
                     <com.google.android.material.card.MaterialCardView
@@ -194,14 +190,12 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        style="@style/textMenu"
                         android:id="@+id/textFavoriteClass"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_13sdp"
-                        android:fontFamily="@font/robotoregular"
                         android:text="Kelas Favorit"
-                        android:textSize="@dimen/_15ssp"
-                        android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/iconMenu1"
                         app:layout_constraintStart_toEndOf="@+id/iconMenu1"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu1" />
@@ -230,6 +224,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/pilihMenu2"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -259,14 +255,12 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        style="@style/textMenu"
                         android:id="@+id/textMyFriends"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_13sdp"
-                        android:fontFamily="@font/robotoregular"
                         android:text="Teman Saya"
-                        android:textSize="@dimen/_15ssp"
-                        android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/iconMenu2"
                         app:layout_constraintStart_toEndOf="@+id/iconMenu2"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu2" />
@@ -295,6 +289,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/pilihMenu3"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -324,14 +320,12 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        style="@style/textMenu"
                         android:id="@+id/textAchievements"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_13sdp"
-                        android:fontFamily="@font/robotoregular"
                         android:text="Penghargaan"
-                        android:textSize="@dimen/_15ssp"
-                        android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/iconMenu3"
                         app:layout_constraintStart_toEndOf="@+id/iconMenu3"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu3" />
@@ -378,10 +372,8 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="@dimen/_20sdp"
-            android:fontFamily="@font/robotomedium"
+            style="@style/headerMenu"
             android:text="PENGATURAN"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15ssp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -410,6 +402,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/pilihMenu4"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintStart_toStartOf="parent"
@@ -439,14 +433,12 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        style="@style/textMenu"
                         android:id="@+id/textEditLoginDetails"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_13sdp"
-                        android:fontFamily="@font/robotoregular"
                         android:text="Ubah Detail Login"
-                        android:textSize="@dimen/_15ssp"
-                        android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/iconMenu4"
                         app:layout_constraintStart_toEndOf="@+id/iconMenu4"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu4" />
@@ -475,6 +467,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/pilihMenu5"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -504,14 +498,12 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        style="@style/textMenu"
                         android:id="@+id/textUpdateInterets"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_13sdp"
-                        android:fontFamily="@font/robotoregular"
                         android:text="Ubah Data"
-                        android:textSize="@dimen/_15ssp"
-                        android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/iconMenu5"
                         app:layout_constraintStart_toEndOf="@+id/iconMenu5"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu5" />
@@ -540,6 +532,8 @@
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:id="@+id/pilihMenu6"
+                    android:background="?attr/selectableItemBackground"
+                    android:clickable="true"
                     android:layout_marginTop="@dimen/_5sdp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -569,14 +563,12 @@
                     </com.google.android.material.card.MaterialCardView>
 
                     <TextView
+                        style="@style/textMenu"
                         android:id="@+id/textBlockedUsers"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_13sdp"
-                        android:fontFamily="@font/robotoregular"
                         android:text="Pengguna Diblokir"
-                        android:textSize="@dimen/_15ssp"
-                        android:textColor="@color/black"
                         app:layout_constraintBottom_toBottomOf="@+id/iconMenu6"
                         app:layout_constraintStart_toEndOf="@+id/iconMenu6"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu6" />

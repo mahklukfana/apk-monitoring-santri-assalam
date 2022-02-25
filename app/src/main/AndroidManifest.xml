@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mhyneuq">
 
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -15,7 +16,8 @@
         android:usesCleartextTraffic="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MhyneUQ">
+        android:theme="@style/Theme.MhyneUQ"
+        tools:targetApi="n">
         <activity
             android:name=".NavigationActivity"
             android:exported="true" >
@@ -27,7 +29,7 @@
         </activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true" ></activity>
+            android:exported="true" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".ui.auth.RegisterActivity" />
     </application>
