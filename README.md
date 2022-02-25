@@ -1,2 +1,2 @@
 # Project Android itsmhyne
-Build for YPI Assalam Jambewangi InsyaAllah :)
+Bismillah dibuat untuk belajar dan kalau memungkinkan dapat digunakan di pondok Assalam JAmbewangi :)
