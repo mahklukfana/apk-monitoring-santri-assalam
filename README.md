@@ -1,2 +1,3 @@
 # Project Android itsmhyne
-Bismillah dibuat untuk belajar dan kalau memungkinkan dapat digunakan di pondok Assalam JAmbewangi :)
+Tidak ada yang tidak mungkin selama kita berusaha :)
+Kecuali sudah memang takdirnya :)
