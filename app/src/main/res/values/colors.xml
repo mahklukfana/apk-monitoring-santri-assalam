@@ -30,6 +30,7 @@
     <color name="hcolorBackground">#f6f7fa</color>
     <color name="hred_600">#fd3746</color>
     <color name="hblue_a700">#345ffb</color>
+    <color name="hblue_500">#259eef</color>
     <color name="hamber_400">#f0c419</color>
     <color name="hlightGreen_a700">#18cf18</color>
     <color name="hpurple_a400">#b900db</color>
@@ -40,5 +41,8 @@
     <color name="hblueGrey_400">#778390</color>
     <color name="hblack">#000000</color>
     <color name="hwhite">#ffffff</color>
+    <color name="hgrey_800">#333333</color>
+    <color name="hgrey_500">#9d9d9d</color>
+    <color name="hgrey_600">#747474</color>
 
 </resources>

@@ -30,17 +30,16 @@ class NavigationActivity : AppCompatActivity() {
 
         navView.setOnItemSelectedListener {
 
-            if (it.itemId == R.id.navigation_notifications){
-                if(SharedPreference.isLogin){ //true / false
+            if (it.itemId == R.id.navigation_profile || it.itemId == R.id.navigation_pemberitahuan || it.itemId == R.id.navigation_chat || it.itemId == R.id.navigation_keuangan) {
+                if (SharedPreference.isLogin) { //true / false
                     navController.navigate(it.itemId)
-                    Log.d("TAG", "sudah login")
-                }else{
+                } else {
                     startActivity(Intent(this, LoginActivity::class.java))
                     Log.d("TAG", "belum login")
                     return@setOnItemSelectedListener false
                 }
 
-            }else{
+            } else {
                 navController.navigate(it.itemId)
                 Log.d("TAG", "onCreate: yang lain" + it.itemId)
             }

@@ -3,24 +3,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mhyneuq">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
         android:name=".util.MyApp"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_kappas"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security"
-        android:usesCleartextTraffic="true"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_kappas_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MhyneUQ"
+        android:usesCleartextTraffic="true"
         tools:targetApi="n">
         <activity
-            android:name=".NavigationActivity"
-            android:exported="true" >
+            android:name=".SplashScreenActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +28,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:exported="true" />
+            android:name=".NavigationActivity" />
+        <activity
+            android:name=".MainActivity" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".ui.auth.RegisterActivity" />
     </application>

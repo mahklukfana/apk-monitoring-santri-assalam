@@ -5,7 +5,7 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.akun.AkunFragment"
+    tools:context=".ui.profile.ProfileFragment"
     android:background="@color/hcolorBackground">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -340,15 +340,7 @@
                         app:layout_constraintTop_toTopOf="@+id/iconMenu3"
                         app:tint="@color/hbrown_100"/>
 
-                    <View
-                        android:id="@+id/lineMenu3"
-                        android:layout_width="0dp"
-                        android:layout_height="0.8dp"
-                        android:background="@color/hcolorBackground"
-                        app:layout_constraintStart_toEndOf="@+id/iconMenu3"
-                        app:layout_constraintTop_toBottomOf="@+id/iconMenu3"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        android:layout_marginTop="@dimen/_5sdp"/>
+
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -582,16 +574,6 @@
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintTop_toTopOf="@+id/iconMenu6"
                         app:tint="@color/hbrown_100"/>
-
-                    <View
-                        android:id="@+id/lineMenu6"
-                        android:layout_width="0dp"
-                        android:layout_height="0.8dp"
-                        android:background="@color/hcolorBackground"
-                        app:layout_constraintStart_toEndOf="@+id/iconMenu6"
-                        app:layout_constraintTop_toBottomOf="@+id/iconMenu6"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        android:layout_marginTop="@dimen/_5sdp"/>
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 

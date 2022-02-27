@@ -2,23 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_beranda"
         android:icon="@drawable/ic_home_black_24dp"
         android:title="@string/title_home" />
 
     <item
-        android:id="@+id/navigation_dashboard"
-        android:icon="@drawable/ic_dashboard_black_24dp"
-        android:title="@string/title_dashboard" />
+        android:id="@+id/navigation_keuangan"
+        android:icon="@drawable/ic_baseline_keuangan_24"
+        android:title="@string/keuangan" />
 
     <item
-        android:id="@+id/navigation_keranjang"
-        android:icon="@drawable/ic_baseline_add_shopping_cart_24"
-        android:title="@string/keranjang" />
+        android:id="@+id/navigation_chat"
+        android:icon="@drawable/ic_baseline_chat_24"
+        android:title="@string/percakapan" />
 
     <item
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/navigation_pemberitahuan"
+        android:icon="@drawable/ic_baseline_notifications_24"
+        android:title="@string/information" />
+
+    <item
+        android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_baseline_person_24"
-        android:title="@string/akun" />
+        android:title="@string/profile" />
 
 </menu>

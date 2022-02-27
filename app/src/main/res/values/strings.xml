@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Assalam Monitoring</string>
+    <string name="app_name">KAPPAS</string>
     <string name="title_activity_navigation">NavigationActivity</string>
     <string name="title_home">Beranda</string>
-    <string name="title_dashboard">Multimedia</string>
-    <string name="title_notifications">Notifikasi</string>
-    <string name="keranjang">Keranjang</string>
-    <string name="akun">Akun</string>
+    <string name="keuangan">Keuangan</string>
+    <string name="information">Pemberitahuan</string>
+    <string name="percakapan">Percakapan</string>
+    <string name="profile">Profile</string>
+    <string name="image_splashcreen">Image_Splashcreen</string>
 </resources>

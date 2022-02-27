@@ -1,20 +1,17 @@
-package com.example.mhyneuq.ui.home
+package com.example.mhyneuq.ui.beranda
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.mhyneuq.R
-import com.example.mhyneuq.databinding.FragmentHomeBinding
+import com.example.mhyneuq.databinding.FragmentBerandaBinding
 
-class HomeFragment : Fragment() {
+class BerandaFragment : Fragment() {
 
-    private lateinit var homeViewModel: HomeViewModel
-    private var _binding: FragmentHomeBinding? = null
+    private lateinit var berandaViewModel: BerandaViewModel
+    private var _binding: FragmentBerandaBinding? = null
 
     private val binding get() = _binding!!
 
@@ -23,10 +20,10 @@ class HomeFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
+        berandaViewModel =
+            ViewModelProvider(this).get(BerandaViewModel::class.java)
 
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentBerandaBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
         setData()
@@ -40,7 +37,7 @@ class HomeFragment : Fragment() {
     }
 
     fun setData(){
-        homeViewModel.text.observe(viewLifecycleOwner,{
+        berandaViewModel.text.observe(viewLifecycleOwner,{
         binding.textHome.text = it
         })
     }

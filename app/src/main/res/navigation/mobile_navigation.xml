@@ -3,29 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/navigation_beranda">
 
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.mhyneuq.ui.home.HomeFragment"
+        android:id="@+id/navigation_beranda"
+        android:name="com.example.mhyneuq.ui.beranda.BerandaFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_beranda" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.mhyneuq.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_pemberitahuan"
+        android:name="com.example.mhyneuq.ui.notifikasi.NotifikasiFragment"
+        android:label="@string/information"
+        tools:layout="@layout/fragment_notifikasi" />
 
     <fragment
-        android:id="@+id/navigation_keranjang"
-        android:name="com.example.mhyneuq.ui.keranjang.KeranjangFragment"
-        android:label="@string/keranjang"
-        tools:layout="@layout/fragment_keranjang" />
+        android:id="@+id/navigation_keuangan"
+        android:name="com.example.mhyneuq.ui.chat.KeuanganFragment"
+        android:label="@string/keuangan"
+        tools:layout="@layout/fragment_keuangan" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.mhyneuq.ui.akun.AkunFragment"
-        android:label="@string/akun"
-        tools:layout="@layout/fragment_akun" />
+        android:id="@+id/navigation_chat"
+        android:name="com.example.mhyneuq.ui.chat.ChatFragment"
+        android:label="@string/percakapan"
+        tools:layout="@layout/fragment_chat" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.mhyneuq.ui.profile.ProfileFragment"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
 </navigation>

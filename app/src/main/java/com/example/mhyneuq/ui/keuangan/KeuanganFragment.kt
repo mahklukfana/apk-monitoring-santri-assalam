@@ -1,4 +1,4 @@
-package com.example.mhyneuq.ui.keranjang
+package com.example.mhyneuq.ui.chat
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -8,16 +8,12 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
-import com.example.mhyneuq.R
-import com.example.mhyneuq.databinding.FragmentAkunBinding
-import com.example.mhyneuq.databinding.FragmentHomeBinding
-import com.example.mhyneuq.databinding.FragmentKeranjangBinding
-import com.example.mhyneuq.ui.home.HomeViewModel
+import com.example.mhyneuq.databinding.FragmentKeuanganBinding
 
-class KeranjangFragment : Fragment() {
+class KeuanganFragment : Fragment() {
 
-    private lateinit var keranjangViewModel: KeranjangViewModel
-    private var _binding: FragmentKeranjangBinding? = null
+    private lateinit var keuanganViewModel: KeuanganViewModel
+    private var _binding: FragmentKeuanganBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -28,11 +24,16 @@ class KeranjangFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        keranjangViewModel =
-            ViewModelProvider(this).get(KeranjangViewModel::class.java)
+        keuanganViewModel =
+            ViewModelProvider(this).get(KeuanganViewModel::class.java)
 
-        _binding = FragmentKeranjangBinding.inflate(inflater, container, false)
+        _binding = FragmentKeuanganBinding.inflate(inflater, container, false)
         val root: View = binding.root
+
+        val textView : TextView = binding.textKeuangan
+        keuanganViewModel.text.observe(viewLifecycleOwner, Observer {
+            textView.text = it
+        })
 
         return root
     }
