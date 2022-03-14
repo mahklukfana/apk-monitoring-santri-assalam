@@ -25,4 +25,60 @@
         <item name="fontFamily">@font/robotomedium</item>
     </style>
 
+    <style name="body">
+        <item name="android:padding">@dimen/_10sdp</item>
+        <item name="background">@color/colorOnPrimaryVariant</item>
+    </style>
+
+    <style name="textTitle" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppinsbold</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+        <item name="android:textColor">@color/colorOnPrimaryVariant</item>
+    </style>
+
+    <style name="textBody" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/colorOnPrimaryVariant</item>
+    </style>
+
+    <style name="textCaption" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/poppinsregular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorOnPrimaryVariant</item>
+    </style>
+
+    <style name="buttonOnPrimary">
+        <item name="textAllCaps">false</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="backgroundTint">@color/colorOnPrimaryVariant</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+    </style>
+
+    <style name="textOnWhiteCardTitle">
+        <item name="fontFamily">@font/poppinsbold</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_16ssp</item>
+    </style>
+
+    <style name="textOnWhiteCardBody">
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/_14ssp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textOnWhiteCardCaption">
+        <item name="android:fontFamily">@font/poppinsregular</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="textOnWhiteDashboard">
+        <item name="android:fontFamily">@font/poppinsmedium</item>
+        <item name="android:textSize">@dimen/_12ssp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
 </resources>

@@ -30,7 +30,8 @@ class NavigationActivity : AppCompatActivity() {
 
         navView.setOnItemSelectedListener {
 
-            if (it.itemId == R.id.navigation_profile || it.itemId == R.id.navigation_pemberitahuan || it.itemId == R.id.navigation_chat || it.itemId == R.id.navigation_keuangan) {
+//            || it.itemId == R.id.navigation_pemberitahuan || it.itemId == R.id.navigation_chat || it.itemId == R.id.navigation_keuangan
+            if (it.itemId == R.id.navigation_profile) {
                 if (SharedPreference.isLogin) { //true / false
                     navController.navigate(it.itemId)
                 } else {

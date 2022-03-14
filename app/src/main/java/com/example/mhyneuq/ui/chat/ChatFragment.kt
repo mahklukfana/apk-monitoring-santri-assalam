@@ -4,10 +4,12 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.AnimationUtils
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
+import com.example.mhyneuq.R
 import com.example.mhyneuq.databinding.FragmentChatBinding
 
 class ChatFragment : Fragment() {
@@ -30,12 +32,18 @@ class ChatFragment : Fragment() {
         _binding = FragmentChatBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView : TextView = binding.textChat
-        chatViewModel.text.observe(viewLifecycleOwner, Observer {
-            textView.text = it
-        })
-
+        animation()
         return root
+    }
+
+    private fun animation() {
+        val test2 = AnimationUtils.loadAnimation(requireContext(), R.anim.left_to_right)
+        val test3 = AnimationUtils.loadAnimation(requireContext(), R.anim.fade_in)
+
+        binding.apply {
+            textNamaUser.startAnimation(test2)
+            btnNotifikasi.startAnimation(test3)
+        }
     }
 
     override fun onDestroyView() {

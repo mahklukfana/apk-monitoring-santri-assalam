@@ -61,49 +61,6 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_13sdp" />
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="@dimen/_15sdp">
-
-            <View
-                android:id="@+id/lineLeft"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:layout_centerVertical="true"
-                android:layout_toLeftOf="@+id/textMid"
-                android:background="#939393" />
-
-            <TextView
-                android:id="@+id/textMid"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_gravity="end"
-                android:layout_marginHorizontal="@dimen/_15sdp"
-                android:text="Atau Masuk Dengan" />
-
-            <View
-                android:id="@+id/lineRight"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_1sdp"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/textMid"
-                android:background="#939393" />
-
-        </RelativeLayout>
-
-        <com.google.android.material.button.MaterialButton
-            style="@style/Button.OutlineBox"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
-            android:text="Google"
-            android:textAllCaps="false"
-            android:textColor="#939393"
-            android:textSize="@dimen/_13sdp"
-            app:icon="@drawable/ic_outline_wifi_tethering_24"
-            app:iconSize="@dimen/_19sdp" />
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

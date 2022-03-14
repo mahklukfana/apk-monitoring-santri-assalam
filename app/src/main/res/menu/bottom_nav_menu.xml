@@ -8,15 +8,16 @@
 
     <item
         android:id="@+id/navigation_keuangan"
-        android:icon="@drawable/ic_baseline_keuangan_24"
+        android:icon="@drawable/invoice_ios"
         android:title="@string/keuangan" />
 
     <item
         android:id="@+id/navigation_chat"
-        android:icon="@drawable/ic_baseline_chat_24"
+        android:icon="@drawable/chat_ios"
         android:title="@string/percakapan" />
 
     <item
+        android:visible="false"
         android:id="@+id/navigation_pemberitahuan"
         android:icon="@drawable/ic_baseline_notifications_24"
         android:title="@string/information" />
